@@ -1,0 +1,10 @@
+body {width: 100%;height: 100vh;margin: 0;padding: 0;background-color: #f2b134;/* border-right: 20vw solid #ccccc7; */box-sizing: border-box;}
+
+.wrapper { position: relative; display: block; text-align:  center; height: 100vh; }
+    .wrapper .lock-wrap { position: absolute; top: 50%; left: 0; right: 0; margin: 0 auto; margin-top: -100px; } 
+        .lock {cursor: pointer;/* left: 50vw; *//* top: 50vh; *//* margin-top: -100px; *//* margin-left: -100px; */width: 200px;height: 200px;background-color: #ccccc7;border-radius: 50%;box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.4), -2px -2px 0px #f1f1f1;position: absolute;top: 0;left: 0;right: 0;margin: 0 auto;}
+        .lock-center { width: 80px; height: 80px; background-color: #bbb; border-radius: 50%; position: absolute; top: 60px; left: 60px;}
+            .lock-center:after { content: ''; display: block; width: 10px; height: 60px; background-color: #aaa; margin-left: 35px; margin-top: 10px; }
+            .lock-center__shadow { width: 80px; height: 80px; background-color: #bbb; border-radius: 50%; position: absolute; top: 60px; left: 60px; box-shadow: 5px 5px 0px #aaa, -2px -2px 0px #f1f1f1; }
+        .lock-disc { clip-path: url(#lockclip); width: 200px; height: 200px; border-radius: 50%; background-color: white; position: relative; box-sizing: border-box; }
+            .lock-disc svg { width: 100%; height: 100%; }

@@ -1,0 +1,16 @@
+body {width: 100%;height: 100vh;margin: 0;padding: 0;background-color: #fff;/* border-right: 20vw solid #ccccc7; */box-sizing: border-box;}
+
+.wrapper {position: relative;display: block;text-align:  center;min-height: 100vh;padding: 0 30px;}
+    body:not(.loggedin) .wrapper#main, .loggedin .wrapper#login  {display:none;}
+
+    .ui-slider .ui-slider-handle {width: 40px;height: 40px;top: -15px; text-align: center; padding-top: 8px; outline: none !important; cursor: pointer;}
+
+    .c-switch { display: inline-flex; position: relative; padding: 3px; border-radius: 50px; background: #0a8ccd; }
+        .c-switch__highlight { width: 50%; position: absolute; top: 3px; left: 0; bottom: 3px; background: #00aaff; border-radius: 50px; transition: 0.3s; }
+        .is-open .c-switch__highlight {width: 114px !important;transform: translateX(122px) !important;}
+        .is-close .c-switch__highlight {width: 119px !important;transform: translateX(3px) !important;}
+        .c-switch button { position: relative; padding: 0.875em 1.75em; font-weight: bold; font-size: 1rem; color: rgba(255, 255, 255, 0.6); background: none; border-radius: 50px; border: 0; outline: none; transition: 0.3s; cursor: pointer; }
+        .c-switch button:hover, .c-switch button:focus, .c-switch button.is-active { color: white; }
+
+    #username { padding: 10px; background: #cccccc59; text-align:  right; font-size: 14px; margin-left: -30px; width: 100vw; padding-right: 30px; margin-bottom: 50px; }
+        #username a { margin-left: 5px; text-decoration:  underline; color: #0c8cce; cursor:pointer }

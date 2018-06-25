@@ -1,0 +1,15 @@
+[
+    {
+        "email": "mm@gmail.com",
+        "password": "1234",
+        "name": "Matias Massaccesi",
+        "root": true,
+        "receiveNotifications": true,
+        "phone": "+5492234246425"
+    },
+    {
+        "email": "gr@gmail.com",
+        "password": "1234",
+        "name": "Gonzalo Rocha"
+    }
+]

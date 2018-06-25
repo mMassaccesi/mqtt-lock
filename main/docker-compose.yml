@@ -1,0 +1,56 @@
+version: "3"
+
+services:
+  
+  mosquitto:
+    image: eclipse-mosquitto
+    volumes: 
+      - /Volumes/mosquitto/mosquitto.conf:/mosquitto/config/mosquitto.conf
+    ports:
+      - "1884:1884"
+      - "9001:9001"
+    networks:
+      - mqtt
+
+  main:
+    build: .
+    command: npm start
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/cerradura
+    networks:
+      - mqtt
+
+  cerradura-iu:
+    build: /Users/matiasmassaccesi/documents/facultad/so2/cerradura
+    ports:
+      - "5001:80"
+    networks:
+      - mqtt
+
+  main-iu:
+    build: /Users/matiasmassaccesi/documents/facultad/so2/iu
+    ports:
+      - "5002:80"
+    networks:
+      - mqtt
+
+  configuracion-iu:
+    build: /Users/matiasmassaccesi/documents/facultad/so2/configuracion
+    ports:
+      - "5003:80"
+    networks:
+      - mqtt
+
+  registros:
+    build: /Users/matiasmassaccesi/documents/facultad/so2/registros
+    ports:
+      - "5004:5004"
+    volumes:
+      - /Users/matiasmassaccesi/documents/facultad/so2/registros:/registros
+    networks:
+      - mqtt
+
+networks:
+  mqtt:

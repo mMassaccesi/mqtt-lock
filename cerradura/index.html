@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cerradura</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="lock-wrap">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+                x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" style="overflow:scroll;enable-background:new 0 0 200 200;"
+                xml:space="preserve" class="hideme">
+                <style type="text/css"> .st0 { fill: #CCCCC7; } .st1 { fill: none; } </style>
+                <defs>
+                </defs>
+                <g>
+                    <circle class="st0" cx="100" cy="100" r="100" />
+                </g>
+                <g>
+                    <clippath id="lockclip">
+                        <path class="st1" d="M100,55c12.4,0,23.7,5,31.8,13.2l28.3-28.3C144.7,24.5,123.5,15,100,15s-44.7,9.5-60.1,24.9l28.3,28.3
+                    C76.3,60,87.6,55,100,55z" />
+                    </clippath>
+                </g>
+            </svg>
+            <div class="lock">
+                <div class="lock-center__shadow"></div>
+                <div class="lock-center">
+                </div>
+                <div class="lock-disc">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+                        x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" style="overflow:scroll;enable-background:new 0 0 200 200;"
+                        xml:space="preserve">
+                        <style type="text/css">
+                            .st0 { fill: #F3F4F1; }
+                            .st1 { fill: #CD4846; }
+                            .st2 { fill: #A1CA73; }
+                        </style>
+                        <defs>
+                        </defs>
+                        <g>
+                            <circle class="st0" cx="100" cy="100" r="100" />
+                        </g>
+                        <g>
+                            <path class="st1" d="M32.4,54.4c-2.9,4.4-5.5,9-7.5,13.8c-0.5,1.2-1,2.5-1.5,3.7c-0.9,2.5-1.7,5.1-2.4,7.7c-0.7,2.6-1.2,5.3-1.6,8
+                            c-0.6,4.1-0.9,8.3-0.9,12.4s0.3,8.3,0.9,12.4c0.4,2.7,1,5.3,1.6,8c1,3.9,2.3,7.7,3.8,11.4c1,2.4,2.2,4.8,3.4,7.1
+                            c1.2,2.3,2.6,4.6,4.1,6.7c1.3,2,2.8,3.9,4.3,5.8l18.1-18.1c-7.1-9.6-10.9-21.1-10.9-33.2s3.8-23.7,10.9-33.2L36.7,48.7
+                            C35.2,50.5,33.7,52.4,32.4,54.4z" />
+                        </g>
+                        <g>
+                            <path class="st2" d="M145.6,32.4c-4.4-2.9-9-5.5-13.8-7.5c-1.2-0.5-2.5-1-3.7-1.5c-2.5-0.9-5.1-1.7-7.7-2.4c-2.6-0.7-5.3-1.2-8-1.6
+                            c-4.1-0.6-8.3-0.9-12.4-0.9s-8.3,0.3-12.4,0.9c-2.7,0.4-5.3,1-8,1.6c-3.9,1-7.7,2.3-11.4,3.8c-2.4,1-4.8,2.2-7.1,3.4
+                            c-2.3,1.2-4.6,2.6-6.7,4.1c-2,1.3-3.9,2.8-5.8,4.3l18.1,18.1c9.6-7.1,21.1-10.9,33.2-10.9s23.7,3.8,33.2,10.9l18.1-18.1
+                            C149.5,35.2,147.6,33.7,145.6,32.4z" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/mqtt@2.18.0/dist/mqtt.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/mqtt.js"></script>
+</body>
+</html>
